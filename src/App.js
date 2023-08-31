@@ -17,7 +17,7 @@ function App() {
             <div className="App">
                 <Header />
                 <Routes>
-                    <Route path="/login" element={<Login />} />
+                    <Route path="/" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/create-exam" element={<CreateExam />} />
                     <Route path="/dashboard/:role" element={<Dashboard />} />
@@ -42,7 +42,6 @@ function App() {
                         path="/answer-sheet/:examId"
                         element={<AnswerSheet />}
                     />
-                    <Route path="/" element={<App />} />
                 </Routes>
             </div>
         </Router>

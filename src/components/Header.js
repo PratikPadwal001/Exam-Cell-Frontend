@@ -10,7 +10,7 @@ export default function Header() {
     const logout = () => {
         sessionStorage.removeItem("user");
         sessionStorage.removeItem("success");
-        navigate("/login");
+        navigate("/");
     };
 
     return (

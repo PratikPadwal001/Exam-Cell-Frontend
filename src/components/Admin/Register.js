@@ -32,7 +32,7 @@ function Register() {
                 formData
             );
             if (response.data.success) {
-                navigate("/login");
+                navigate("/");
             }
         } catch (error) {
             setError("Error creating user: ", error.message);
